@@ -1,31 +1,15 @@
 function cs = create_demoConfig()
-% MATLAB function for configuration set generated on 12-May-2023 01:48:11
-% MATLAB version: 9.13.0.2049777 (R2022b)
 
 cs = Simulink.ConfigSet;
 
-% Original configuration set version: 22.1.0
-if cs.versionCompare('22.1.0') < 0
-    error('Simulink:MFileVersionViolation', 'The version of the target configuration set is older than the original configuration set.');
-end
 
-% Character encoding: UTF-8
-
-% Do not change the order of the following commands. There are dependencies between the parameters.
 cs.set_param('Name', 'demoConfig'); % Name
 cs.set_param('Description', ''); % Description
-
-% Original configuration set target is grt.tlc
 cs.switchTarget('grt.tlc','');
-
 cs.set_param('HardwareBoard', 'None');   % Hardware board
-
 cs.set_param('TargetLang', 'C');   % Language
-
 cs.set_param('CodeInterfacePackaging', 'Nonreusable function');   % Code interface packaging
-
 cs.set_param('GenerateAllocFcn', 'off');   % Use dynamic memory allocation for model initialization
-
 cs.set_param('Solver', 'ode4');   % Solver
 
 % Solver
@@ -48,7 +32,7 @@ cs.set_param('LoadExternalInput', 'off');   % Load external input
 cs.set_param('SaveFinalState', 'off');   % Save final state
 cs.set_param('LoadInitialState', 'off');   % Load initial state
 cs.set_param('LimitDataPoints', 'off');   % Limit data points
-cs.set_param('SaveFormat', 'Dataset');   % Format
+cs.set_param('SaveFormat', 'DataSet');   % Format
 cs.set_param('SaveOutput', 'on');   % Save output
 cs.set_param('SaveState', 'off');   % Save states
 cs.set_param('SignalLogging', 'on');   % Signal logging

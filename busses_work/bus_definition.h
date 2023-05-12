@@ -1,6 +1,10 @@
 #ifndef RTW_HEADER_bus_definition_h_
 #define RTW_HEADER_bus_definition_h_
-#include "rtwtypes.h"
+#ifdef  MATLAB_MEX_FILE
+#include "tmwtypes.h"
+#else
+typedef double real_T;
+#endif
 
 typedef struct {
   real_T E1;
